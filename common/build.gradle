@@ -1,0 +1,20 @@
+group 'net.artcoder'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.6.2'
+    compile('com.fasterxml.jackson.core:jackson-databind:2.7.4')
+    compile('com.fasterxml.jackson.core:jackson-annotations:2.7.4')
+    compile('com.mashape.unirest:unirest-java:1.4.9')
+}

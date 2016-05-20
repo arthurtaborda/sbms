@@ -1,0 +1,14 @@
+package net.artcoder.domain;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@ToString
+public class Error {
+
+	public Integer errorCode;
+	public String message;
+}

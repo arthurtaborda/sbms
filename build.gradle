@@ -1,0 +1,40 @@
+group 'net.artcoder'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    apply plugin: 'java'
+}
+
+sourceCompatibility = 1.8
+
+subprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+
+        // JBoss Repo
+        maven { url 'https://repository.jboss.org/nexus/content/groups/public-jboss/' }
+    }
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.8.2'
+        compile group: 'org.slf4j', name: 'slf4j-api', version: '1.5.8'
+        compile 'org.slf4j:slf4j-api:1.7.21'
+        compile 'ch.qos.logback:logback-core:1.1.7'
+        compile 'org.projectlombok:lombok:1.16.8'
+        compile 'org.aspectj:aspectjrt:1.8.9'
+        compile 'org.aspectj:aspectjweaver:1.8.9'
+        compile 'org.springframework:spring-aop:4.2.5.RELEASE'
+        compile 'org.springframework:spring-core:4.2.5.RELEASE'
+        compile 'org.springframework:spring-beans:4.2.5.RELEASE'
+        compile 'org.springframework:spring-context:4.2.5.RELEASE'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

@@ -1,0 +1,4 @@
+server:
+  address: 'http://localhost:8080'
+  username: 123.123.123.123
+  password: client

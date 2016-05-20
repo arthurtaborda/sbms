@@ -1,0 +1,6 @@
+rootProject.name = 'sbms'
+include 'common'
+include 'server'
+include 'machine'
+include 'dashboard'
+
