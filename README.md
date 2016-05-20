@@ -46,3 +46,6 @@ To do any action, it is necessary to login first. For default, the server create
 Once the admin user is logged, it can create, show, enable, disable, delete backups and create and list machines. The process is very straightforward. To show the list of parameters to create a backup for example, run:
 
 	help backup create
+
+The format to send dates is yyyy-MM-dd'T'HH:mm:ss.SSSZ
+The format for the source and destination parameters is smb://{domain}/{path}
